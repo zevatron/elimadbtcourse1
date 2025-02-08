@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: SNOWFLAKE_SOURCE
+    description: "Source Snowflake"
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+    tables:
+        - name: orders
+          description: "Tabela de Pedidos"
+        - name: nation
+          description: "Tabela de PaÍses"
+        - name: region
+          description: "Tabela de RegiÕes"
