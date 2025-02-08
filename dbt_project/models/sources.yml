@@ -8,7 +8,15 @@ sources:
     tables:
         - name: orders
           description: "Tabela de Pedidos"
+          freshness:
+            warn_after:
+              count: 100
+              period: day
+            error_after:
+              count: 200
+              period: day
+          loaded_at_field: O_ORDERDATE::timestamp
         - name: nation
           description: "Tabela de PaÍses"
         - name: region
-          description: "Tabela de RegiÕes"
+          description: "Tabela de Regiões"
