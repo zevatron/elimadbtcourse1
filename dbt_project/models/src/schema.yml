@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: src_nation
+    description: "Table Source Nation"
+    columns:
+      - name: N_NATIONKEY
+        description: detalhes do campo
+        tests:
+          - unique
+          - not_null
+      - name: N_NAME
+        description: detalhes do campo
+      - name: N_COMMENT
+        description: detalhes do campo
+      - name: N_REGIONKEY
+        description: detalhes do campo
