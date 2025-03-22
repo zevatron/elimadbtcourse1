@@ -39,3 +39,10 @@ models:
     stg:
       +materialized: table
 
+seeds:
+  dbt_project:
+    +database: demo_db_dbt
+    +schema: seeds
+    +calendar:
+      +enabled: true
+      
