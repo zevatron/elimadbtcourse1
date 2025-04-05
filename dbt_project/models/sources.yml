@@ -20,3 +20,6 @@ sources:
           description: "Tabela de PaÍses"
         - name: region
           description: "Tabela de Regiões"
+          tests:
+            - accepted_values:
+                values: [0,1,2,3,4]
